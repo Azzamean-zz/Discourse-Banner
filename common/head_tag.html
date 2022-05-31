@@ -1,4 +1,5 @@
-<script type="text/discourse-plugin" version="0.8.18">
+<!-- <script type="text/discourse-plugin" version="0.8.18"> -->
+<script>
 
   const { iconNode, convertIconClass } = require("discourse-common/lib/icon-library");
   const cookie = require("discourse/lib/cookie").default;
@@ -175,14 +176,14 @@
   });
   
   api.createWidget("banner-content-widget", {
-    tagName: "div#banner-content_wrap" + setupBanner(),
+    tagName: "div#banner-content_wrap.community-row" + setupBanner(),
     html(attrs) {
   
       let columns = [];
   
       if(settings.first_column_content) {
         columns.push(
-          h('div.first_column.single-box', [
+          h('div.first_column.single-box.community-box', [
             this.attach('banner-column-icon', { column: 0 }),
             h('div', { innerHTML: settings.first_column_content })
           ])
@@ -191,7 +192,7 @@
   
       if(settings.second_column_content) {
         columns.push(
-          h('div.second_column.single-box', [
+          h('div.second_column.single-box.community-box', [
             this.attach('banner-column-icon', { column: 1 }),
             h('div', { innerHTML: settings.second_column_content })
           ])
@@ -200,7 +201,7 @@
   
       if(settings.third_column_content) {
         columns.push(
-          h('div.third_column.single-box', [
+          h('div.third_column.single-box.community-box', [
             this.attach('banner-column-icon', { column: 2 }),
             h('div', { innerHTML: settings.third_column_content })
           ])
@@ -209,7 +210,7 @@
   
       if(settings.fourth_column_content) {
         columns.push(
-          h('div.fourth_column.single-box', [
+          h('div.fourth_column.single-box.community-box', [
             this.attach('banner-column-icon', { column: 3 }),
             h('div', { innerHTML: settings.fourth_column_content })
           ])
