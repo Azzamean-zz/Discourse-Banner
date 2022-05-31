@@ -1,29 +1,3 @@
-/* BANNER BUTTONS */
-.community-row {
-  display: flex;
-  flex-wrap: wrap;
-  }
-  .community-box {
-  flex: 1;
-  margin: 10px;
-  padding: 30px 15px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
-  border-radius: 10px;
-  text-align: center;
-  }
-  .community-text {
-  margin: 20px 0 40px 0;
-  }
-  .community-link {
-  background: #0088FF;
-  border-radius: 30px;
-  padding: 5px 38px;
-  color: #ffffff;
-  text-decoration: none;
-  }
-
-
 @if $display_on_desktop == "false" {
   .desktop-view .banner-box {
     display: none !important;
@@ -309,3 +283,31 @@
 .hidden-banner {
   display: none;
 }
+
+
+
+
+// Andrew
+.community-row {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .community-box {
+  flex: 1;
+  margin: 10px;
+  padding: 30px 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  text-align: center;
+  }
+  .community-text {
+  margin: 20px 0 40px 0;
+  }
+  .community-link {
+  background: #0088FF;
+  border-radius: 30px;
+  padding: 5px 38px;
+  color: #ffffff;
+  text-decoration: none;
+  }
