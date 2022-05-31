@@ -113,7 +113,7 @@ main_heading_content:
   textarea: true
   default: |
             <h2 class="x-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              THIS IS DEFAULT SHOWING ITS BROKEN.
             </h2>
             <div class="colored-line"></div>
             <div class="description">
