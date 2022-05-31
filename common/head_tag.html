@@ -219,14 +219,11 @@
         return h('div.row', columns);
       }
     });
-    
-    </script>
-    
-    <script type="text/x-handlebars" data-template-name="/connectors/custom-banner/banner">
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/custom-banner/banner">
       {{mount-widget widget="banner-box-widget"}}
-    </script>
-    
-    <script type="text/x-handlebars" data-template-name="/connectors/below-site-header/banner-themes">
+</script>
+<script type="text/x-handlebars" data-template-name="/connectors/below-site-header/banner-themes">
       {{#if (theme-setting 'show_for_members')}}
         {{#if currentUser}}
           {{plugin-outlet name="custom-banner"}}
@@ -237,4 +234,4 @@
           {{plugin-outlet name="custom-banner"}}
         {{/unless}}
       {{/if}}
-    </script>
+</script>
