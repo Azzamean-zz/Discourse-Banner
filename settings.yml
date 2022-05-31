@@ -150,7 +150,7 @@ second_column_content:
   default: |
             <h3>Another simple box</h3>
             <p>
-              Integer velit ante, 
+               THIS IS DEFAULT SHOWING ITS BROKEN., 
               <a href="https://discourse.org">DISCOURSE</a> 
               amet tristique in, gravida at ligula. Sed gravida mauris id 
               neque vestibulum semper. Suspendisse potenti. Nam 
@@ -159,7 +159,7 @@ second_column_content:
             </p>
 
             <div class="buttons" id="my-button">
-              <a href="#" class="btn btn-icon-text">My new button</a>
+              <a href="#" class="btn btn-icon-text">My new button by Andrew</a>
             </div>
 third_column_content:
   type: string
